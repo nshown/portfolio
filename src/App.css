@@ -1,9 +1,11 @@
 .App {
   text-align: center;
+  background-color: #000000;
+  z-index: -2;
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -11,15 +13,26 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: relative;
+  z-index: 2;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-.App .corner-img {
+.App .top-corner-img {
   position: absolute;
   top: -4%;
   left: 0px;
   max-width: 18%;
+  z-index: 1;
+}
+
+.App .bottom-corner-img {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  max-width: 100%;
+  z-index: 0;
 }
