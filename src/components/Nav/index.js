@@ -1,28 +1,49 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import './Nav.css';
 
 
 function Nav() {
+  const [toggleMenu, setToggleMenu] = useState(false)
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
-  // useEffect(() => {
-  //   document.title = capitalizeFirstLetter(currentPage.name);
-  // }, [currentPage]);
+  useEffect(() => {
+
+    const changeWidth = () => {
+      console.log("changing width");
+      setScreenWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', changeWidth)
+
+    return () => {
+      window.removeEventListener('resize', changeWidth)
+    }
+  }, [])
+
+  const toggleNav = () => {
+    console.log("setting toggle Menu");
+    setToggleMenu(prevToggleMenu => !prevToggleMenu);
+  }
 
   return (
-    <nav className="Nav">
-      <div className="Nav__container">
-        <ul className="Nav__item-wrapper">
-          <li className="Nav__item">
-            <Link className="Nav__link" to="/">Home</Link>
+    <nav>
+      {(toggleMenu || screenWidth > 500) && (
+        <ul className='nav-list'>
+          <li className='nav-list-item'>
+            <Link to="/">Home</Link>
           </li>
-          <li className="Nav__item">
-            <Link className="Nav__link" to="/about">About</Link>
+          <li className='nav-list-item'>
+            <Link to="/about">About</Link>
           </li>
-          <li className="Nav__item">
-            <Link className="Nav__link" to="/contact">Contact</Link>
+          <li className='nav-list-item'>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
-      </div>
+      )}
+
+      <button onClick={toggleNav} className="btn">&#9776;</button>
+
     </nav>);
 }
 

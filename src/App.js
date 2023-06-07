@@ -3,7 +3,8 @@ import './App.css';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import About from './components/About';
-import eventHorizonImg from './assets/img/eventhorizon2.jpg';
+import Contact from './components/Contact';
+import eventHorizonImg from './assets/img/event-horizon-2.jpg';
 import ribbonWeb from './assets/img/ribbon-web.png';
 
 
@@ -11,7 +12,7 @@ function App() {
   return (
     <div className="app">
       <header>
-        <img src={eventHorizonImg} class="top-corner-img" alt="event horizon" />
+        <img src={eventHorizonImg} className="top-corner-img" alt="event horizon" />
       </header>
       <Router>
         <Nav />
@@ -29,11 +30,15 @@ function App() {
               path="/about"
               element={<About />}
             />
+            <Route
+              path="/contact"
+              element={<Contact />}
+            />
           </Routes>
 
         </main>
       </Router>
-      {/* <img src={ribbonWeb} class="bottom-corner-img" alt="ribbon web"></img> */}
+      {/* <img src={ribbonWeb} className="bottom-corner-img" alt="ribbon web"></img> */}
     </div>
   );
 }
