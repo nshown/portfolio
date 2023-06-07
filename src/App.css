@@ -1,10 +1,10 @@
-.App {
+.app {
   text-align: center;
   background-color: #000000;
   z-index: -2;
 }
 
-.App-header {
+.app-main {
   /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
@@ -17,11 +17,11 @@
   z-index: 2;
 }
 
-.App-link {
+.app-link {
   color: #61dafb;
 }
 
-.App .top-corner-img {
+.app .top-corner-img {
   position: absolute;
   top: -4%;
   left: 0px;
@@ -29,7 +29,7 @@
   z-index: 1;
 }
 
-.App .bottom-corner-img {
+.app .bottom-corner-img {
   position: absolute;
   bottom: 0px;
   right: 0px;
