@@ -13,6 +13,8 @@ nav {
   justify-content: right;
   align-items: center;
   position: relative;
+  margin-top: 0;
+  padding-left: 0;
 }
 
 .nav-list-item {
@@ -26,9 +28,9 @@ nav {
 .nav-list-item a {
   text-decoration: none;
   font-weight: bold;
-  text-shadow:
-    /* 0 0 2px #0093bc, */ 0 0 5px #0093bc, 0 0 30px #6cabbd;
-  /* 0 0 40px #9ae8fe; */
+  /* text-shadow:
+    0 0 2px #0093bc, 0 0 5px #0093bc, 0 0 30px #6cabbd;
+    0 0 40px #9ae8fe; */
   transition: 0.5s;
 }
 
@@ -38,8 +40,14 @@ nav {
   right: 10px;
   top: 7px;
   padding: 5px;
-  color: #000;
+  /* color: #000; */
+  color: var(--anchor-blue);
+  background: none;
+  border-radius: 8px;
   font-size: 18px;
+  font-weight: bolder;
+  transition: 0.5s;
+  border: none;
 }
 
 @media screen and (max-width: 500px) {

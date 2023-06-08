@@ -5,7 +5,7 @@ function Home() {
     <section>
       <h1>Hello, <br />I'm Nathan Shown!</h1>
       <p>
-        I'm a full stack software engineer dedicated to <br />tackling tricky problems and making great web apps
+        I'm a full stack software engineer dedicated to <br className='hideable'/>tackling tricky problems and making great web apps
       </p>
     </section>
   );

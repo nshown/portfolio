@@ -1,3 +1,8 @@
+:root {
+  --anchor-blue: #54a4ba;
+  --white: #ffffff;
+}
+
 .app {
   text-align: center;
   background-color: #000000;
@@ -11,15 +16,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  top: -100px;
   font-size: calc(10px + 2vmin);
   color: white;
   position: relative;
   z-index: 2;
-  padding: 5%;
+  padding: 8%;
 }
 
 a {
-  color: #54a4ba;
+  color: var(--anchor-blue);
 }
 
 .app .top-corner-img {
@@ -38,11 +44,72 @@ a {
   z-index: 0;
 }
 
-a.glow:hover {
+a.glow:hover, .btn.glow:hover {
   text-shadow:
-  /* 0 0 2px #0093bc, */
-  0 0 5px #0093bc,
-  /* 0 0 10px #0093bc, */
-  0 0 30px #6cabbd,
-  0 0 40px #6cabbd;
+  /* 0 0 2px #0093bc, */ 0 0 5px #0093bc,
+    /* 0 0 10px #0093bc, */ 0 0 30px #6cabbd, 0 0 40px #6cabbd;
+}
+
+@media screen and (max-width: 500px) {
+  .hideable {
+    display: none;
+  }
+}
+
+.fade-in img {
+  position: absolute;
+  left: -65px;
+  top: 0;
+  -webkit-animation-name: fade;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 2.4s;
+  animation-name: fade;
+  animation-iteration-count: infinite;
+  animation-duration: 2.4s;
+}
+
+/* #fade-img-1 {
+  background-color: lightblue;
+} */
+
+#fade-img-2 {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+  /* background-color: lightgreen; */
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  8.33333333333333% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  58.3333333333333% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  8.33333333333333% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  58.3333333333333% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

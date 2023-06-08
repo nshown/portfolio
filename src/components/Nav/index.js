@@ -42,7 +42,7 @@ function Nav() {
         </ul>
       )}
 
-      <button onClick={toggleNav} className="btn">&#9776;</button>
+      <button onClick={toggleNav} className="glow btn">&#9776;</button>
 
     </nav>);
 }
