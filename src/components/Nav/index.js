@@ -31,13 +31,13 @@ function Nav() {
       {(toggleMenu || screenWidth > 500) && (
         <ul className='nav-list'>
           <li className='nav-list-item'>
-            <Link to="/">Home</Link>
+            <Link className='glow' to="/">Home</Link>
           </li>
           <li className='nav-list-item'>
-            <Link to="/about">About</Link>
+            <Link className='glow' to="/about">About</Link>
           </li>
           <li className='nav-list-item'>
-            <Link to="/contact">Contact</Link>
+            <Link className='glow' to="/contact">Contact</Link>
           </li>
         </ul>
       )}

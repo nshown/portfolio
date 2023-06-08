@@ -15,6 +15,7 @@
   color: white;
   position: relative;
   z-index: 2;
+  padding: 5%;
 }
 
 a {
@@ -35,4 +36,13 @@ a {
   right: 0px;
   max-width: 100%;
   z-index: 0;
+}
+
+a.glow:hover {
+  text-shadow:
+  /* 0 0 2px #0093bc, */
+  0 0 5px #0093bc,
+  /* 0 0 10px #0093bc, */
+  0 0 30px #6cabbd,
+  0 0 40px #6cabbd;
 }
