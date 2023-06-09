@@ -19,6 +19,7 @@ function App() {
           <img id='fade-img-2' src={eventHorizonImg1} className="top-corner-img" alt="event horizon 1" />
         </div>
       </header>
+      {/* <Router basename='/portfolio'>  tried to resolve the portfolio link problem with the basename property*/}
       <Router>
         <Nav />
         <main className="app-main">
