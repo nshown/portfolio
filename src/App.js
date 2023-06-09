@@ -19,19 +19,14 @@ function App() {
           <img id='fade-img-2' src={eventHorizonImg1} className="top-corner-img" alt="event horizon 1" />
         </div>
       </header>
-      {/* <Router basename='/portfolio'>  tried to resolve the portfolio link problem with the basename property*/}
       <HashRouter>
         <Nav />
         <main className="app-main">
-          {/* Wrap Route elements in a Routes component */}
           <Routes>
-            {/* Define routes using the Route component to render different page components at different paths */}
-            {/* Define a default route that will render the Home component */}
             <Route
               path="/"
               element={<Home />}
             />
-            {/* Define a route that will take in variable data */}
             <Route
               path="/about"
               element={<About />}
@@ -41,7 +36,6 @@ function App() {
               element={<Contact />}
             />
           </Routes>
-
         </main>
       </HashRouter>
       {/* <img src={ribbonWeb} className="bottom-corner-img" alt="ribbon web"></img> */}

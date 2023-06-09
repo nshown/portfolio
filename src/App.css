@@ -3,6 +3,11 @@
   --white: #ffffff;
 }
 
+.home-title {
+  font-size: xxx-large;
+  margin: 0;
+}
+
 .app {
   text-align: center;
   background-color: #000000;
@@ -53,6 +58,10 @@ a.glow:hover, .btn.glow:hover {
 @media screen and (max-width: 500px) {
   .hideable {
     display: none;
+  }
+
+  .app-main{
+    top: -50px;
   }
 }
 

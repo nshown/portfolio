@@ -22,8 +22,11 @@ function Nav() {
   }, [])
 
   const toggleNav = () => {
-    console.log("setting toggle Menu");
     setToggleMenu(prevToggleMenu => !prevToggleMenu);
+  }
+
+  const hideMenu = () => {
+    setToggleMenu(false);
   }
 
   return (
@@ -31,13 +34,13 @@ function Nav() {
       {(toggleMenu || screenWidth > 500) && (
         <ul className='nav-list'>
           <li className='nav-list-item'>
-            <Link className='glow' to="/">Home</Link>
+            <Link onClick={hideMenu} className='glow' to="/">Home</Link>
           </li>
           <li className='nav-list-item'>
-            <Link className='glow' to="/about">About</Link>
+            <Link onClick={hideMenu} className='glow' to="/about">About</Link>
           </li>
           <li className='nav-list-item'>
-            <Link className='glow' to="/contact">Contact</Link>
+            <Link onClick={hideMenu} className='glow' to="/contact">Contact</Link>
           </li>
         </ul>
       )}
