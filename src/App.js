@@ -20,7 +20,7 @@ function App() {
         </div>
       </header>
       {/* <Router basename='/portfolio'>  tried to resolve the portfolio link problem with the basename property*/}
-      <Router>
+      <Router basename={`/${process.env.PUBLIC_URL}`}>
         <Nav />
         <main className="app-main">
           {/* Wrap Route elements in a Routes component */}
@@ -28,16 +28,16 @@ function App() {
             {/* Define routes using the Route component to render different page components at different paths */}
             {/* Define a default route that will render the Home component */}
             <Route
-              path="/"
+              path=""
               element={<Home />}
             />
             {/* Define a route that will take in variable data */}
             <Route
-              path="/about"
+              path="about"
               element={<About />}
             />
             <Route
-              path="/contact"
+              path="contact"
               element={<Contact />}
             />
           </Routes>
