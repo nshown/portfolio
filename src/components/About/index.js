@@ -3,7 +3,7 @@ import './About.css';
 
 function About() {
   return (
-    <section>
+    <section className='about'>
       <div>
         <p>I am passionate about software engineering.  I love the challenge of creating a new application or enhancing an existing application to better serve the userbase.  My appreciation of application engineering is rooted in my love of problem solving and providing users with a new, enjoyable, and useful experience.  I have worked as an engineer for over a decade and I continue to delight in the experience.</p>
       </div>

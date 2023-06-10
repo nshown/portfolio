@@ -1,17 +1,21 @@
-svg {
+section.contact {
+  margin-top: 30px;
+}
+
+.contact-list svg {
   fill: aliceblue;
-  width: 2em;
-  display: inline;
-  position: relative;
-  top: 0.6em;
-  margin-right: 10px;
+  /* width: 2em; */
+  /* display: inline; */
+  /* position: relative; */
+  /* top: 0.6em; */
+  /* margin-right: 10px; */
 }
 
-span {
+.contact-list span {
   display: inline;
 }
 
-a {
+.contact-list a {
   display: inline;
   text-decoration: none;
   transition: 0.5s;
@@ -20,4 +24,40 @@ a {
 .contact-list {
   list-style-type: none;
   text-align: initial;
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  width: 60vw;
+  max-width: 500px;
+}
+
+li.contact-tile {
+  flex: 20%;
+  margin: 6px;
+  border-radius: 6px;
+  box-shadow: 4px 6px 8px 0px rgba(94, 195, 238, 0.7);
+  transition: 0.5s;
+}
+
+li.contact-tile:hover {
+  box-shadow: 0px 1px 2px 0px rgba(94, 195, 238, 0.7),
+    1px 2px 4px 0px rgba(94, 195, 238, 0.7),
+    2px 4px 8px 0px rgba(94, 195, 238, 0.7),
+    2px 4px 16px 0px rgba(94, 195, 238, 0.7);
+}
+
+.contact-tile span {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .contact-list {
+    /* flex-direction: column; */
+    /* width: 50vw; */
+  }
+
+  li.contact-tile {
+    flex: 42%;
+    /* height: 200px; */
+  }
 }

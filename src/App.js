@@ -7,7 +7,10 @@ import Contact from './components/Contact';
 import eventHorizonImg1 from './assets/img/event-horizon-2.jpg';
 import eventHorizonImg2 from './assets/img/event-horizon-2-1.jpg';
 // import ribbonWeb from './assets/img/ribbon-web.png';
-import ribbonWeb from './assets/img/ribbon1-edit2.png';
+// import ribbonWeb from './assets/img/ribbon1-edit1.png';
+// import ribbonWeb from './assets/img/ribbon1-edit2.png';
+// import ribbonWeb from './assets/img/ribbon1-edit3.png';
+import ribbonWeb from './assets/img/ribbon1-edit4.png';
 
 
 function App() {
@@ -38,7 +41,7 @@ function App() {
           </Routes>
         </main>
       </HashRouter>
-      {/* <img src={ribbonWeb} className="bottom-corner-img" alt="ribbon web"></img> */}
+      <img src={ribbonWeb} className="bottom-corner-img" alt="ribbon web"></img>
     </div>
   );
 }
