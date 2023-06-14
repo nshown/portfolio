@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2bb7d659.css",
-    "main.js": "/portfolio/static/js/main.5adbf7a5.js",
+    "main.css": "/portfolio/static/css/main.ccdab647.css",
+    "main.js": "/portfolio/static/js/main.0cb53528.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/ribbon1-edit4.png": "/portfolio/static/media/ribbon1-edit4.c5cf06c84cebec29b1ce.png",
+    "static/media/ribbon1-edit7.png": "/portfolio/static/media/ribbon1-edit7.53f347521c7c1d131c14.png",
+    "static/media/nidsans-webfont.ttf": "/portfolio/static/media/nidsans-webfont.6868f8897b9b864eb5d1.ttf",
     "static/media/event-horizon-2-1.jpg": "/portfolio/static/media/event-horizon-2-1.1fa2d633d52b765356cb.jpg",
     "static/media/event-horizon-2.jpg": "/portfolio/static/media/event-horizon-2.815abe71eda29ce48cfe.jpg",
     "index.html": "/portfolio/index.html",
-    "main.2bb7d659.css.map": "/portfolio/static/css/main.2bb7d659.css.map",
-    "main.5adbf7a5.js.map": "/portfolio/static/js/main.5adbf7a5.js.map",
+    "main.ccdab647.css.map": "/portfolio/static/css/main.ccdab647.css.map",
+    "main.0cb53528.js.map": "/portfolio/static/js/main.0cb53528.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2bb7d659.css",
-    "static/js/main.5adbf7a5.js"
+    "static/css/main.ccdab647.css",
+    "static/js/main.0cb53528.js"
   ]
 }
