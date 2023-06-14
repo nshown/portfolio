@@ -22,7 +22,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  top: 60px;
+  /* top: 60px; */
+  margin-top: 60px;
   /* padding-top: 6%; */
   font-size: calc(10px + 2vmin);
   color: white;
@@ -64,7 +65,8 @@ a.glow:hover, .btn.glow:hover {
   }
 
   .app-main{
-    top: 30px;
+    /* top: 30px; */
+    margin-top: 20px;
     margin-right: 20px;
     margin-left: 20px;
   }
