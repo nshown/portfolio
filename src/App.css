@@ -8,6 +8,10 @@
   margin: 0;
 }
 
+body {
+  font-family: "nidsans-webfont";
+}
+
 .app {
   text-align: center;
   background-color: #000000;

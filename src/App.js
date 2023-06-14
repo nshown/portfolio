@@ -10,7 +10,7 @@ import eventHorizonImg2 from './assets/img/event-horizon-2-1.jpg';
 // import ribbonWeb from './assets/img/ribbon1-edit1.png';
 // import ribbonWeb from './assets/img/ribbon1-edit2.png';
 // import ribbonWeb from './assets/img/ribbon1-edit3.png';
-import ribbonWeb from './assets/img/ribbon1-edit4.png';
+import ribbonWeb from './assets/img/ribbon1-edit7.png';
 
 
 function App() {
